@@ -1,0 +1,85 @@
+<!-- 
+Joel da Silva Evangelista
+TIA: 21005419
+Informações: contatos
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">	
+	<head>
+		<title> Contatos </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body>
+		<div id="wrap">
+			<header>
+				<p id="logo"><img src="img/logo.png" width="200" alt="Acros Technic - logotipo" /></p>
+				<h1> Acros Project </h1>
+				<p id="marca"> Possibilitando novos horizontes em gerenciamento de projetos e tecnologia da informação </p>
+
+				<hr/>
+					<nav><ul>
+						<li><a href="index.html"> Home </a></li>
+						<li><a href="BI.html"> Power BI </a></li>
+						<li><a href="contato.html"> Fale Conosco </a></li>
+					</ul></nav>
+				<hr/>
+			</header>
+
+			<section>
+			
+				<h2> Quer conhecer mais sobre nossas ferramentas e metodologias? </h2>
+				<h3>Entre em contato conosco:</h3>
+			
+				<table id="tborder">
+					<tbody><tr>	<td>
+						<form action="." method="post">		
+							<label class="inf">Nome:</label><input type="text" name="nome" maxlength="80" size="50"> <br> <br>
+							<label class="inf">E-mail:</label><input type="email" name="email" maxlength="80" size="49"> <br> <br>
+							<label class="inf">Telefone:</label><input type="tel" name="phone" id="phone" placeholder="(11) 91234-5678"> <br>
+							<p class="inf"> Como conheceu nossa empresa?</p>
+						
+							<input type="radio" name="divulgation" id="divulgation" value="google">
+							<label for="divulgation">Google</label> <br>
+							<input type="radio" name="divulgation" value="twitter">
+							<label for="divulgation">Twitter</label> <br>
+							<input type="radio" name="divulgation" value="empresa">
+							<label for="divulgation">Empresa</label> <br>
+							<input type="radio" name="divulgation" value="amigos">
+							<label for="divulgation">amigos</label> <br>
+							<input type="radio" name="divulgation" value="outros">
+							<label for="divulgation">Outros</label> <br>
+						</form>
+					</td>
+				
+					<td id="inf-msg">
+						<form action="." method="post">		
+							<p class="inf"> Área de Interesse: </p>
+							<input type="checkbox" name="proj" id="proj" value="bi">
+							<label for="proj"> Power BI</label>
+							<input type="checkbox" name="proj" value="agile">
+							<label for="proj"> Agile</label>
+							<input type="checkbox" name="proj" value="waterfall">
+							<label for="proj"> Waterfall</label> <br> <br>
+							<input type="checkbox" name="proj" value="scrum">
+							<label for="proj"> Scrum</label>
+							<input type="checkbox" name="proj" value="prince2">
+							<label for="proj"> PRINCE2</label>
+							<input type="checkbox" name="proj" value="pert">
+							<label for="proj"> PERT</label> <br> <br>
+
+							<p class="inf"> Mensagem:</p>
+							<textarea rows="5" cols="40"> </textarea> <br> <br>
+
+							<input type="submit" name="submit" value="Enviar">
+							<input type="reset" name="reset" value="Deletar">
+						</form>
+					</td></tr></tbody>
+				</table>
+			</section>
+		</div>
+	</body>
+</html>

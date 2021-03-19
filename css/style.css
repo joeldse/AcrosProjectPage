@@ -1,0 +1,91 @@
+/* Formatação básica da página */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+.col1{
+	width: 60px;
+}
+.col11{
+	width: 860px;
+}
+
+
+
+
+
+#wrap{
+	width: 980px;
+	margin: auto;
+	padding: 10px;		
+}
+footer{
+	clear: both;
+}
+h1{
+	color: purple;
+	font-size:30px;
+	text-align:center;
+	background-color:powderblue;
+	letter-spacing: 2px;
+}
+#logo{
+	text-align:center;
+}
+#marca{
+	color:violet; 
+	text-align:center;
+}
+.services{
+	float:left; 
+	width:33%;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+header nav ul li a{
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	text-decoration: underline;
+}
+p{
+	text-indent: 25px;
+	text-align: justify;
+}
+
+
+/* CSS para BI */
+#ref{
+	color:red;
+	font-size:120%;
+}
+.img{
+	 text-align: center;
+}
+
+/* CSS para contatos */
+#tborder{
+	border: none;
+}
+.inf{
+	color: violet;
+}
+.inf-msg{
+	text-align: center;
+	vertical-align: middle;
+}
+

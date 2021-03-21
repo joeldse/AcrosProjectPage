@@ -4,82 +4,96 @@ TIA: 21005419
 Informações: contatos
 -->
 
+
 <!DOCTYPE html>
 <html lang="pt-br">	
 	<head>
 		<title> Contatos </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />			<!-- Padronização em navegadores -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">					<!-- Para busca de fonte padrão -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />				<!-- arquivo css -->
 	</head>
 	
 	<body>
-		<div id="wrap">
-			<header>
-				<p id="logo"><img src="img/logo.png" width="200" alt="Acros Technic - logotipo" /></p>
-				<h1> Acros Project </h1>
-				<p id="marca"> Possibilitando novos horizontes em gerenciamento de projetos e tecnologia da informação </p>
-
-				<hr/>
-					<nav><ul>
-						<li><a href="index.html"> Home </a></li>
-						<li><a href="BI.html"> Power BI </a></li>
-						<li><a href="contato.html"> Fale Conosco </a></li>
-					</ul></nav>
-				<hr/>
-			</header>
-
-			<section>
-			
+		<div class="wrap">
+			<div class="linha">
+				<header>
+					<div class="coluna col4">
+						<h1> <a href="index.html"> <img src="img/logoc.png" width="200" alt="Acros Project" /> </a> </h1>
+					</div>
+					<div class="coluna col8">
+						<nav>
+							<ul class="menu inline sem-marcador">
+								<li><a href="index.html"> Home </a></li>
+								<li><a href="BI.html"> Power BI </a></li>
+								<li><a href="contato.html"> Fale Conosco </a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+		
+		<div class="linha">
+			<section>		
 				<h2> Quer conhecer mais sobre nossas ferramentas e metodologias? </h2>
 				<h3>Entre em contato conosco:</h3>
 			
-				<table id="tborder">
-					<tbody><tr>	<td>
-						<form action="." method="post">		
-							<label class="inf">Nome:</label><input type="text" name="nome" maxlength="80" size="50"> <br> <br>
-							<label class="inf">E-mail:</label><input type="email" name="email" maxlength="80" size="49"> <br> <br>
-							<label class="inf">Telefone:</label><input type="tel" name="phone" id="phone" placeholder="(11) 91234-5678"> <br>
-							<p class="inf"> Como conheceu nossa empresa?</p>
+				<div class="coluna col6">
+					<form action="." method="post">		
+						<label class="inf">Nome:</label><input type="text" name="nome" maxlength="80" size="45"> <br> <br>
+						<label class="inf">E-mail:</label><input type="email" name="email" maxlength="80" size="45"> <br> <br>
+						<label class="inf">Telefone:</label><input type="tel" name="phone" id="phone" placeholder="(11) 91111-1111"> <br>
+						<p class="inf"> Como conheceu nossa empresa?</p>
 						
-							<input type="radio" name="divulgation" id="divulgation" value="google">
-							<label for="divulgation">Google</label> <br>
-							<input type="radio" name="divulgation" value="twitter">
-							<label for="divulgation">Twitter</label> <br>
-							<input type="radio" name="divulgation" value="empresa">
-							<label for="divulgation">Empresa</label> <br>
-							<input type="radio" name="divulgation" value="amigos">
-							<label for="divulgation">amigos</label> <br>
-							<input type="radio" name="divulgation" value="outros">
-							<label for="divulgation">Outros</label> <br>
-						</form>
-					</td>
+						<input type="radio" name="divulgation" id="divulgation" value="google">
+						<label for="divulgation">Google</label> <br>
+						<input type="radio" name="divulgation" value="twitter">
+						<label for="divulgation">Twitter</label> <br>
+						<input type="radio" name="divulgation" value="empresa">
+						<label for="divulgation">Empresa</label> <br>
+						<input type="radio" name="divulgation" value="amigos">
+						<label for="divulgation">amigos</label> <br>
+						<input type="radio" name="divulgation" value="outros">
+						<label for="divulgation">Outros</label> <br>
+					</form>
+				</div>
 				
-					<td id="inf-msg">
-						<form action="." method="post">		
-							<p class="inf"> Área de Interesse: </p>
-							<input type="checkbox" name="proj" id="proj" value="bi">
-							<label for="proj"> Power BI</label>
-							<input type="checkbox" name="proj" value="agile">
-							<label for="proj"> Agile</label>
-							<input type="checkbox" name="proj" value="waterfall">
-							<label for="proj"> Waterfall</label> <br> <br>
-							<input type="checkbox" name="proj" value="scrum">
-							<label for="proj"> Scrum</label>
-							<input type="checkbox" name="proj" value="prince2">
-							<label for="proj"> PRINCE2</label>
-							<input type="checkbox" name="proj" value="pert">
-							<label for="proj"> PERT</label> <br> <br>
+				<div class="coluna col6">
+					<form action="." method="post">		
+						<p class="inf"> Área de Interesse: </p>
+						<input type="checkbox" name="proj" id="proj" value="bi">
+						<label for="proj"> Power BI</label>
+						<input type="checkbox" name="proj" value="agile">
+						<label for="proj"> Agile</label>
+						<input type="checkbox" name="proj" value="waterfall">
+						<label for="proj"> Waterfall</label> <br> <br>
+						<input type="checkbox" name="proj" value="scrum">
+						<label for="proj"> Scrum</label>
+						<input type="checkbox" name="proj" value="prince2">
+						<label for="proj"> PRINCE2</label>
+						<input type="checkbox" name="proj" value="pert">
+						<label for="proj"> PERT</label> <br> <br>
 
-							<p class="inf"> Mensagem:</p>
-							<textarea rows="5" cols="40"> </textarea> <br> <br>
+						<p class="inf"> Mensagem:</p>
+						<textarea rows="5" cols="40"> </textarea> <br> <br>
 
-							<input type="submit" name="submit" value="Enviar">
-							<input type="reset" name="reset" value="Deletar">
-						</form>
-					</td></tr></tbody>
-				</table>
+						<input type="submit" name="submit" value="Enviar">
+						<input type="reset" name="reset" value="Deletar">
+					</form>
+				</div>
 			</section>
+		</div>
+		<div class="footer">
+			<div class="linha">
+				<footer>
+					<div class="coluna col12">
+						<span> Todos os direitos reservados &copy; Acros Project - 2021 </span>
+					</div>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>

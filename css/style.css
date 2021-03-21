@@ -1,6 +1,49 @@
 /* Formatação básica da página */
 body{
 	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+ul li{
+	margin-bottom: 5px;
+}
+ul.inline li{
+	display: inline-block;
+	margin-right: 20px;
+}
+ul.sem-marcador{
+	list-style: none;
+}
+a:link, a:active, a:visited{
+	text-decoration: none;
+	color: #315e8a;
+}
+a:hover{
+	text-decoration: underline;
+}
+h1, h2, h3{
+	font-weight: 500;
+	margin: 15px 0 10px 0;
+}
+p{
+	text-indent: 25px;
+	text-align: justify;
+}
+a.botao{
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor: pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+}
+a.botao:hover{
+	background: #315e8a;
+}
+img{
+	max-width: 100%;
+	height: auto;
 }
 .linha{
 	width: 960px;
@@ -12,63 +55,42 @@ body{
 	padding: 0 10px;
 	float: left;
 }
-.col1{
-	width: 60px;
+.col3{
+	width: 220px;
 }
-.col11{
-	width: 860px;
+.col4{
+	width: 300px;
+}
+.col6{
+	width: 460px;
+}
+.col8{
+	width: 620px;
+}
+.col12{
+	width: 940px;
+}
+
+/* layout do site */
+.wrap{
+	background: #dee3e6;
+}
+.footer{
+	background: #dee3e6;
+	color: #315e8a;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
+}
+.menu{
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 30px;
 }
 
 
 
-
-
-#wrap{
-	width: 980px;
-	margin: auto;
-	padding: 10px;		
-}
-footer{
-	clear: both;
-}
-h1{
-	color: purple;
-	font-size:30px;
-	text-align:center;
-	background-color:powderblue;
-	letter-spacing: 2px;
-}
-#logo{
-	text-align:center;
-}
-#marca{
-	color:violet; 
-	text-align:center;
-}
-.services{
-	float:left; 
-	width:33%;
-}
-header nav ul{
-	list-style: none;
-}
-header nav ul li{
-	display: inline-block;
-	margin-right: 10px;
-}
-header nav ul li a{
-	text-decoration: none;
-}
-header nav ul li a:hover{
-	text-decoration: underline;
-}
-p{
-	text-indent: 25px;
-	text-align: justify;
-}
-
-
-/* CSS para BI */
+/* page BI */
 #ref{
 	color:red;
 	font-size:120%;
@@ -77,15 +99,8 @@ p{
 	 text-align: center;
 }
 
-/* CSS para contatos */
-#tborder{
-	border: none;
-}
+/* page contatos */
 .inf{
 	color: violet;
-}
-.inf-msg{
-	text-align: center;
-	vertical-align: middle;
 }
 

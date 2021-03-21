@@ -1,7 +1,7 @@
 <!-- 
 Joel da Silva Evangelista
 TIA: 21005419
-Aula - Index da página
+Informação - Index da página
 -->
 
 <!DOCTYPE html>
@@ -9,52 +9,65 @@ Aula - Index da página
 	<head>
 		<title> Acros Project </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />			<!-- Padronização em navegadores	 -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />			<!-- Padronização em navegadores -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">					<!-- Para busca de fonte padrão -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />				<!-- arquivo css -->
 	</head>
 	
 	<body>
-		<div class="linha">
-			<div class="coluna col11"></div>
-			<div class="coluna col1"></div>
+		<div class="wrap">
+			<div class="linha">
+				<header>
+					<div class="coluna col4">
+						<h1> <a href="index.html"> <img src="img/logoc.png" width="200" alt="Acros Project" /> </a> </h1>
+					</div>
+					<div class="coluna col8">
+						<nav>
+							<ul class="menu inline sem-marcador">
+								<li><a href="index.html"> Home </a></li>
+								<li><a href="BI.html"> Power BI </a></li>
+								<li><a href="contato.html"> Fale Conosco </a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
 		</div>
-		<div id="wrap">
-			<header>
-				<p id="logo"><img src="img/logo.png" width="200" alt="Acros Technic - logotipo" /></p>
-				<h1> Acros Project </h1>
-				<p id="marca"> Possibilitando novos horizontes em gerenciamento de projetos e tecnologia da informação </p>
+		
+		<div class="linha">
+			<section>
+				<div class="coluna col4 sidebar">
+					<div class="services" ><img src="img/logo_powerBI.png" width="220" alt="Bi - logotipo"></div>
+				</div>
+				<div class="coluna col8">
+					<h2> Voe pelos processos de desenvolvimento de software </h2>
+					<p> Conheça a </p>
+					<p>lig ncsdfnks </p>
+					<a href="BI.html" class="botao"> Saiba mais &raquo; </a>
+				</div>
 
-				<hr/>
-					<nav><ul>
-						<li><a href="index.html"> Home </a></li>
-						<li><a href="BI.html"> Power BI </a></li>
-						<li><a href="contato.html"> Fale Conosco </a></li>
-					</ul></nav>
-				<hr/>
-			</header>
+				<div class="coluna col8">
+					<h2> Voe pelos processos de desenvolvimento de software </h2>
+					<p> Conheça a <br/>
+						andkndsk
+					</p>
+					<a href="#" class="botao"> Saiba mais &raquo; </a>
+				</div>
+				<div class="coluna col4 sidebar">
+					<div class="services" ><img src="img/logo_powerBI.png" width="220" alt="Bi - logotipo"></div>
+				</div>
 
-			<div id="content">
-				<section>
-					<h3> Nossos Serviços </h3>
-					<p class="text"> A Acros Technic proporciona maior controle na implementação de novas ferramentas computacionais em sua empresa, auxiliando na escolha dos melhores métodos de gerenciamento de projetos e tecnologia da informação presentes no mundo </p>
-					
-					<div class="services" ><img src="img/logo_powerBI.png" width="200" alt="Bi - logotipo"></div>
-					<div class="services" ><img src="img/logo_scrum.png" width="200" alt="Scrum - logotipo"></div>
-					<div class="services" ><img src="img/logo_cloud.png" width="200" alt="Cloud - logotipo"></div>
-				</section>
+			</section>
+		</div>
+		<div class="footer">
+			<div class="linha">
+				<footer>
+					<div class="coluna col12">
+						<span> Todos os direitos reservados &copy; Acros Project - 2021 </span>
+					</div>
+				</footer>
 			</div>
-			
-			<div id="sidebar">
-				<aside>
-					<p> texto </p>
-				</aside>
-			</div>
-
-			<footer>
-				<p> Todos os direitos reservados </p>
-			</footer>
 		</div>
 	</body>
 </html>

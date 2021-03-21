@@ -1,7 +1,7 @@
 <!-- 
 Joel da Silva Evangelista
 TIA: 21005419
-Informações: Informações sobre BI
+Informação - Power BI
 -->
 
 <!DOCTYPE html>
@@ -9,27 +9,34 @@ Informações: Informações sobre BI
 	<head>
 		<title> Power BI </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />			<!-- Padronização em navegadores -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">					<!-- Para busca de fonte padrão -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />				<!-- arquivo css -->
 	</head>
 	
 	<body>
-		<div id="wrap">
-			<header>
-				<p id="logo"><img src="img/logo.png" width="200" alt="Acros Technic - logotipo" /></p>
-				<h1> Acros Project </h1>
-				<p id="marca"> Possibilitando novos horizontes em gerenciamento de projetos e tecnologia da informação </p>
-
-				<hr/>
-					<nav><ul>
-						<li><a href="index.html"> Home </a></li>
-						<li><a href="BI.html"> Power BI </a></li>
-						<li><a href="contato.html"> Fale Conosco </a></li>
-					</ul></nav>
-				<hr/>
-			</header>
-
-			<section>
+		<div class="wrap">
+			<div class="linha">
+				<header>
+					<div class="coluna col4">
+						<h1> <a href="index.html"> <img src="img/logoc.png" width="200" alt="Acros Project" /> </a> </h1>
+					</div>
+					<div class="coluna col8">
+						<nav>
+							<ul class="menu inline sem-marcador">
+								<li><a href="index.html"> Home </a></li>
+								<li><a href="BI.html"> Power BI </a></li>
+								<li><a href="contato.html"> Fale Conosco </a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+		
+		<div class="linha">
+			<section>		
 				<h2> Como funciona o Power BI? </h2>
 				<p> Power BI é uma ferramenta que utiliza de um coleção de serviços de aplicativos, software e conectores de forma a transformar os dados em informações coerentes, interativas e agradaveis visualmente. <br>
 
@@ -41,11 +48,11 @@ Informações: Informações sobre BI
 					<li>Aplicativos móveis, podendo ser utilizados em dispositivos android, iOS e Windows</li>
 				</ul>
 
-				<p class="img"><img src="elementos_BI.png" width="600" alt="programa_powerbi" /> <br>
+				<p class="img"><img src="img/elementos_BI.png" width="600" alt="programa_powerbi" /> <br>
 
 				<p> Dessa forma, é possível gerar relatórios com as mais diversas aparências e interattividades </p>
 
-				<p class="img"><img src="powerbi.jpg" width="600" alt="programa_powerbi" /> </p>
+				<p class="img"><img src="img/powerbi.jpg" width="600" alt="programa_powerbi" /> </p>
 
 				<p> Conheça um pouco mais sobre vendo o vídeo abaixo: </p>
 
@@ -55,12 +62,20 @@ Informações: Informações sobre BI
 					</video>
 				</p>
 
-				
 				<p id="ref">Referências</p>
 				<p>
 					HART, M. O que é Power BI? Microsoft, 2020. Disponivel em: <a href="https://docs.microsoft.com/pt-br/power-bi/fundamentals/power-bi-overview"  target="_blank">https://docs.microsoft.com/pt-br/power-bi/fundamentals/power-bi-overview</a>. Acesso em: 17 fev. 2021.
 				</p>
 			</section>
+		</div>
+		<div class="footer">
+			<div class="linha">
+				<footer>
+					<div class="coluna col12">
+						<span> Todos os direitos reservados &copy; Acros Project - 2021 </span>
+					</div>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>

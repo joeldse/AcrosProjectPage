@@ -81,6 +81,7 @@ section{
 	margin-top: 60px;
 }
 .footer{
+	position: relative;
 	background: #dee3e6;
 	color: #315e8a;
 	padding: 20px 0;
